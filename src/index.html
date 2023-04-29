@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Calculator</title>
-</head>
-<body>
-    <div id="calculator"></div>
-</body>
+  </head>
+  <body>
+    <div id="calculator">
+      <div id="display">
+        <div id="last-calc">1 + 1</div>
+        <div id="result">
+          <img src="./assets/Equals.svg" alt="equals sign" />
+          <span>2</span>
+        </div>
+      </div>
+      <div id="teclado">
+        <button class="secondary">CE</button>
+        <button>C</button>
+        <button><img src="./assets/Percent.svg" alt="" /></button>
+        <button class="tertiary">
+          <img src="./assets/Divide.svg" alt="" />
+        </button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="tertiary">
+          <img src="./assets/Mutiply.svg" alt="" />
+        </button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="tertiary">
+          <img src="./assets/Minus.svg" alt="" />
+        </button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="tertiary">
+          <img src="./assets/Minus.svg" alt="" />
+        </button>
+        <button><img src="./assets/PlusMinus.svg" alt="" /></button>
+        <button>0</button>
+        <button>,</button>
+        <button class="quartiary">
+          <img src="./assets/Result.svg" alt="" />
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
