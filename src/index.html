@@ -17,44 +17,47 @@
   <body>
     <div id="calculator">
       <div id="display">
-        <div id="last-calc">1 + 1</div>
+        <div id="last-calc"></div>
         <div id="result">
           <img src="./assets/Equals.svg" alt="equals sign" />
-          <span>2</span>
+          <span id="total" hidden></span>
         </div>
       </div>
       <div id="teclado">
-        <button class="secondary">CE</button>
-        <button>C</button>
-        <button><img src="./assets/Percent.svg" alt="" /></button>
-        <button class="tertiary">
-          <img src="./assets/Divide.svg" alt="" />
+        <button class="secondary" onclick="CleanCurrentEntry()">CE</button>
+        <button onclick="CleanAll()">C</button>
+        <button>
+          <img src="./assets/Percent.svg" alt="" onclick="Percentage()" />
         </button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
         <button class="tertiary">
-          <img src="./assets/Mutiply.svg" alt="" />
+          <img src="./assets/Divide.svg" alt="" onclick="CalcAction('/')" />
         </button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
+        <button onclick="AddNumber(7)">7</button>
+        <button onclick="AddNumber(8)">8</button>
+        <button onclick="AddNumber(9)">9</button>
         <button class="tertiary">
-          <img src="./assets/Minus.svg" alt="" />
+          <img src="./assets/Mutiply.svg" alt="" onclick="CalcAction('x')" />
         </button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
+        <button onclick="AddNumber(4)">4</button>
+        <button onclick="AddNumber(5)">5</button>
+        <button onclick="AddNumber(6)">6</button>
         <button class="tertiary">
-          <img src="./assets/Minus.svg" alt="" />
+          <img src="./assets/Plus.svg" alt="" onclick="CalcAction('+')" />
+        </button>
+        <button onclick="AddNumber(1)">1</button>
+        <button onclick="AddNumber(2)">2</button>
+        <button onclick="AddNumber(3)">3</button>
+        <button class="tertiary">
+          <img src="./assets/Minus.svg" alt="" onclick="CalcAction('-')" />
         </button>
         <button><img src="./assets/PlusMinus.svg" alt="" /></button>
-        <button>0</button>
-        <button>,</button>
+        <button onclick="AddNumber(0)">0</button>
+        <button onclick="AddComma()">,</button>
         <button class="quartiary">
-          <img src="./assets/Result.svg" alt="" />
+          <img src="./assets/Result.svg" alt="" onclick="Result()" />
         </button>
       </div>
     </div>
   </body>
+  <script src="./scripts.js"></script>
 </html>
